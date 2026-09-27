@@ -1,0 +1,38 @@
+generated: '2026-09-27'
+method: probed
+source: https://www.bearrobotics.ai/privacy-policy
+signals:
+  data_subject_request:
+    - url: https://www.bearrobotics.ai/privacy-policy
+      section: "Your Rights and Choices"
+      note: Users can request access, correction, deletion, etc.
+      evidence:
+        - source: https://www.bearrobotics.ai/privacy-policy
+          http_status: 200
+          fetched: /tmp/privacy.html
+          quote: "You may exercise these rights by contacting us as indicated in the “Contact Information” section. Before fulfilling your request, we may ask you to provide reasonable information to verify your identity."
+  data_retention:
+    - url: https://www.bearrobotics.ai/privacy-policy
+      section: "Retention of robot imagery"
+      note: Retains robot imagery only as needed for support.
+      evidence:
+        - source: https://www.bearrobotics.ai/privacy-policy
+          http_status: 200
+          fetched: /tmp/privacy.html
+          quote: "When you request technical support, our support team may access raw imagery from the robot to diagnose the issue; we retain such imagery only for as long as necessary to address the support request and related operational purposes, and we do not currently use it to train artificial intelligence or machine learning models."
+    - url: https://www.bearrobotics.ai/privacy-policy
+      section: "User uploaded content retention"
+      note: Retention of user uploaded content.
+      evidence:
+        - source: https://www.bearrobotics.ai/privacy-policy
+          http_status: 200
+          fetched: /tmp/privacy.html
+          quote: "Photos, videos, and sound files uploaded through the App or Bear Universe are retained for as long as needed to provide our Services and until you request deletion."
+    - url: https://www.bearrobotics.ai/privacy-policy
+      section: "General retention policy"
+      note: General retention for backups, legal, etc.
+      evidence:
+        - source: https://www.bearrobotics.ai/privacy-policy
+          http_status: 200
+          fetched: /tmp/privacy.html
+          quote: "We may retain Personal Information for backups, archiving, prevention of fraud and abuse, analytics, satisfaction of legal obligations, or where we otherwise have a legitimate reason to do so, to the extent permitted by applicable law."
